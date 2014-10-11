@@ -20,7 +20,7 @@ else
     if $COLORTERM == 'gnome-terminal'
         set t_Co=256
     endif
-    colorscheme default
+    colorscheme Tomorrow-Night
     hi CursorLine term=NONE cterm=NONE ctermbg=237
 endif
 
@@ -39,6 +39,11 @@ endif
 " <F2> to paste safely from other apps
 nnoremap <F2> :set invpaste Paste?<CR>
 set pastetoggle=<F2>
+
+" ColorStepper Keys
+nmap <F6> <Plug>ColorstepPrev
+nmap <F7> <Plug>ColorstepNext
+nmap <S-F7> <Plug>ColorstepReload
 
 " Line jiggling with Alt-dir
 nnoremap <A-j> :m .+1<CR>==
